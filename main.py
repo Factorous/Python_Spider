@@ -37,7 +37,7 @@ def Spider():
         else:
             links = fix_links(links,get_domain_name(to_visit))  #Fixes the links
             print("Crawled:"+to_visit)
-            warning("Queue lenght:{}".format(str(QUEUE.qsize())))
+
             CRAWLED.append(to_visit)
             TO_FILTER.append(to_visit)
             QUEUE.task_done()
@@ -55,6 +55,8 @@ def handle_memory():
     global CRAWLED , QUEUE
     time.sleep(60)
     if len(CRAWLED) > 5000 or QUEUE.qsize() > 10000:
+        warning("Queue lenght:{}".format(str(QUEUE.qsize())))
+        warning("Crawled lenght:{}".format(str(len(CRAWLED))))
         warning("lists take up too much space! \nSaving them...")
         Good_news("Saving lists...")
         '''
