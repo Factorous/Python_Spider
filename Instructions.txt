@@ -1,0 +1,22 @@
+Requirements:
+	-python3
+	-bs4 module
+	-requests module
+
+You can install python3 at : https://www.python.org/downloads/
+
+To install the required modules you can use the pip command after installing python:
+	pip install -r requirements.txt
+
+And on Mac:
+	sudo pip install -r requirements.txt
+
+
+———————————————————————————————————————
+
+Instructions:
+	-You can run the script via terminal on Mac/Linux and cmd on Windows.
+	-After having installed python3 and the necessary modules, just type:
+		cd Directory_Of_The_Script
+		python3 main.py 
+
