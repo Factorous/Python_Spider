@@ -1,2 +1,2 @@
 # Python_Spider
-Simple Spider made in Python3 , (multithreading enabled)
+Simple Spider/Crawler made in Python3 , (multithreading and User-Agent-Spoofer enabled)
